@@ -43,11 +43,11 @@ const InventoryPage = () => {
     setInventory(storedInventory);
   }, []);
 
-  const handleSearchChange = (event) => {
-    setSearchQuery(event.target.value);
+  const handleSearchChange = (e) => {
+    setSearchQuery(e.target.value);
   };
 
-  const handlePageChange = (event, value) => {
+  const handlePageChange = (e, value) => {
     setCurrentPage(value);
   };
 

@@ -14,7 +14,7 @@ export const InventoryProvider = ({ children }) => {
     { id: 6, name: 'Mineral Water', qty: 1, uom: 'Liter', price: 5.0 },
   ]);
 
-  // Functions to manipulate inventory
+  // Functions to manipulate data of inventory
   const addItem = (item) => {
     setInventory([...inventory, item]);
   };
@@ -34,7 +34,6 @@ export const InventoryProvider = ({ children }) => {
   );
 };
 
-// Custom hook to use inventory context
 export const useInventory = () => {
   return useContext(InventoryContext);
 };

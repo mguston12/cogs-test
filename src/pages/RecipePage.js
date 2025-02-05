@@ -17,15 +17,15 @@ const RecipePage = () => {
 
   useEffect(() => {
     const storedInventory = JSON.parse(localStorage.getItem("inventory")) || [
-      { id: 1, name: "Aren Sugar", qty: "1 kg", uom: "kg", price: 60.0 },
-      { id: 2, name: "Milk", qty: "1 Liter", uom: "Liter", price: 30.0 },
-      { id: 3, name: "Ice Cube", qty: "1 Kg", uom: "kg", price: 15.0 },
-      { id: 4, name: "Plastic Cup", qty: "10 pcs", uom: "pcs", price: 5.0 },
-      { id: 5, name: "Coffee Bean", qty: "1 kg", uom: "kg", price: 100.0 },
+      { id: 1, name: "Aren Sugar", qty: "1", uom: "kg", price: 60.0 },
+      { id: 2, name: "Milk", qty: "1", uom: "Liter", price: 30.0 },
+      { id: 3, name: "Ice Cube", qty: "1", uom: "kg", price: 15.0 },
+      { id: 4, name: "Plastic Cup", qty: "10", uom: "pcs", price: 5.0 },
+      { id: 5, name: "Coffee Bean", qty: "1", uom: "kg", price: 100.0 },
       {
         id: 6,
         name: "Mineral Water",
-        qty: "1 Liter",
+        qty: "1",
         uom: "Liter",
         price: 5.0,
       },
@@ -77,7 +77,6 @@ const RecipePage = () => {
       </Typography>
       <Paper sx={{ p: 3, mb: 3 }}>
         <Grid container spacing={2}>
-          {/* Row 1: TextField */}
           <Grid item xs={12}>
             <TextField
               label="Number of Cups"
@@ -89,7 +88,6 @@ const RecipePage = () => {
               inputProps={{ min: 1 }}
             />
           </Grid>
-          {/* Row 2: Button */}
           <Grid item xs={12}>
             <Button
               variant="contained"
